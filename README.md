@@ -2,8 +2,6 @@
 
 ## Description
 
-This box provides basic elements to develop smart contracts for RSK Network.
-
 This box comes with everything you need to start using smart contracts at RSK Network. It includes network configs for Mainnet and Testnet.
 
 ## Installation
