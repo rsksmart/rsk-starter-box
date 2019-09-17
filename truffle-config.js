@@ -1,6 +1,6 @@
 const HDWalletProvider = require('truffle-hdwallet-provider');
 
-//Put your mnemonic here, take care of this and don't deploy your mnemonic to production!
+//Put your mnemonic here, take care of this and don't deploy your mnemonic into production!
 const mnemonic = 'A_MNEMONIC';
 
 module.exports = {
