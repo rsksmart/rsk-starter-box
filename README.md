@@ -19,7 +19,7 @@ npm install -g truffle
 Run the unbox command
 
 ```bash
-truffle unbox rsk-starter-box
+truffle unbox rsksmart/rsk-starter-box
 ```
 
 ## Setup envirnoment
