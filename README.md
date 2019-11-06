@@ -22,7 +22,7 @@ Run the unbox command
 truffle unbox rsksmart/rsk-starter-box
 ```
 
-## Setup envirnoment
+## Setup environment
 
 The only thing you'll need to do it's to copy your mnemonic to truffle-config.js
 
