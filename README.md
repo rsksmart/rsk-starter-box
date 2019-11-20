@@ -19,10 +19,10 @@ npm install -g truffle
 Run the unbox command
 
 ```bash
-truffle unbox rsk-starter-box
+truffle unbox rsksmart/rsk-starter-box
 ```
 
-## Setup envirnoment
+## Setup environment
 
 The only thing you'll need to do it's to copy your mnemonic to truffle-config.js
 
