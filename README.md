@@ -2,31 +2,49 @@
 
 ## Description
 
-This box comes with everything you need to start using smart contracts at RSK Network. It includes network configs for Mainnet and Testnet.
+This box comes with everything you need to start using Truffle on RSK Network. It includes network configs for Mainnet and Testnet.
 
 ## Installation
 
-First ensure you are in a new and empty directory and have truffle installed. 
+First ensure you are in a new and empty directory.
 
-If you don't have truffle installed you'll need to run this in order to install it.
+1. Install Truffle globally
 
-```bash
+```
 npm install -g truffle
 ```
 
-### Unboxing
+2. Run the unbox command. This will install all necessary dependencies.
 
-Run the unbox command
-
-```bash
+```
 truffle unbox rsksmart/rsk-starter-box
 ```
 
-## Setup environment
+3. Run the development console.
 
-The only thing you'll need to do it's to copy your mnemonic to truffle-config.js
+```
+truffle develop
+```
 
-```js
+4. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with truffle.
+
+```
+compile
+migrate
+```
+
+**NOTE**: This box is not a complete dapp.
+
+## Setup an account & Get RBTC
+
+To get an address please go [here](https://developers.rsk.co/rsk/architecture/account-based/).
+If you are in RSK Testnet you can get tRBTC from our [Faucet](https://faucet.testnet.rsk.co/). For RSK Mainnet go [here](https://www.rsk.co/#exchanges-rsk).
+
+## Connect to RSK
+
+1. Copy your mnemonic to truffle-config.js
+
+```
 // truffle-config.json
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
@@ -35,11 +53,9 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
 const mnemonic = 'A_MNEMONIC';
 ```
 
-## Using the truffle console
+2. Run the development console for any RSK network.
 
-You can start a truffle console for any RSK network
-
-```bash
+```
 # Console for Mainnet
 truffle console --network mainnet
 
@@ -47,14 +63,9 @@ truffle console --network mainnet
 truffle console --network testnet
 ```
 
-## Migrating contracts
+4. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with truffle.
 
-In order to migrate contracts to a specific network
-
-```bash
-# Migrate for Mainnet
-truffle migrate --network mainnet
-
-# Migrate for Testnet
-truffle migrate --network testnet
+```
+compile
+migrate
 ```
