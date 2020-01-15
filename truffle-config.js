@@ -17,12 +17,14 @@ module.exports = {
   networks: {
     mainnet: {
       provider: () => new HDWalletProvider(mnemonic, 'https://public-node.rsk.co'),
-      network_id: 30
+      network_id: 30,
+      gasPrice: 0x387EE40
     },
 
     testnet: {
       provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co'),
-      network_id: 31
+      network_id: 31,
+      gasPrice: 0x387EE40
     }
   },
 
