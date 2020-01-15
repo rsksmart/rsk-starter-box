@@ -43,8 +43,25 @@ To get an address please go [here](https://developers.rsk.co/rsk/architecture/ac
 If you are in RSK Testnet you can get tRBTC from our [Faucet](https://faucet.testnet.rsk.co/). For RSK Mainnet go [here](https://www.rsk.co/#exchanges-rsk).
 
 ### Setup the gas price
+
 **Gas** is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send RBTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK this is paid in **RBTC**.
 The **minimumGasPrice** is written in the block header by miners and establishes the minimum gas price a transaction should have in order to be included in that block.
+
+To get the **minimumGasPrice** do the following steps:
+1. Run this query using cURL:
+    **Mainnet**
+    ```
+    curl https://public-node.rsk.co/ \
+        -X POST -H "Content-Type: application/json" \
+        --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest",false],"id":1}'
+    ```
+    **Testnet**
+    ```
+    curl https://public-node.testnet.rsk.co/ \
+        -X POST -H "Content-Type: application/json" \
+        --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest",false],"id":1}'
+    ```
+2. Find in the result the field **_minimumGasPrice_**
 
 For more information about the **Gas** and **minimumGasPrice** please go [here](https://developers.rsk.co/rsk/rbtc/gas/). 
 
