@@ -2,7 +2,7 @@
     "name": "rsk-starter-box",
     "version": "1.0.0",
     "dependencies": {
-        "@truffle/hdwallet-provider": "1.0.28"
+        "@truffle/hdwallet-provider": "1.0.34"
     },
     "devDependencies": {},
     "license": "MTI"
