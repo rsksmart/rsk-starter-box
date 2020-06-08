@@ -164,5 +164,5 @@ Go to the tutorial [Using rsk-starter-box](https://developers.rsk.co/tutorials/t
 Check out the [RSK developers portal](https://developers.rsk.co/).
 
 - **Do you have questions?**
-- 
+
 Ask in [RSK chat](https://gitter.im/rsksmart/getting-started).
