@@ -1,41 +1,79 @@
 # RSK Truffle Starter Box
 
-## Description
+This box comes with everything you need to start using Truffle on [RSK](https://www.rsk.co/) Blockchain. 
+It includes network configurations for Mainnet, Testnet and the SimpleStorage contract as an example to deploy.
 
-This box comes with everything you need to start using Truffle on RSK Network. It includes network configurations for Mainnet and Testnet.
+## Requirements
+
+1. [NPM (Node Package Manager)](https://nodejs.org/en/)
+Node.js and NPM are needed, though both are usually installed at once.
+
+Go to [Node.js](https://nodejs.org/en/) if you need to install it.
+
+2. Truffle
+
+Install Truffle globally
+
+```shell
+npm install -g truffle
+```
 
 ## Installation
 
-First ensure you are in a new and empty directory.
+1. Create a new folder. 
+For example, create the folder `rsk-starter`.
+Navigate to the folder in the terminal.
 
-1. Install Truffle globally
-
-    ```shell
-    npm install -g truffle
-    ```
+```shell
+mkdir rsk-starter
+cd rsk-starter
+```
 
 2. Run the unbox command. This will install all necessary dependencies.
 
-    ```shell
-    truffle unbox rsksmart/rsk-starter-box
-    ```
+```shell
+truffle unbox rsksmart/rsk-starter-box
+```
+
+## Development console
+
+Truffle has an interactive console that also spawns a development blockchain. This is very useful for compiling, deploying and testing locally.
 
 3. Run the development console.
 
-    ```shell
-    truffle develop
-    ```
+```shell
+truffle develop
+```
 
-4. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with truffle.
+4. Take a look at the smart contract `SimpleStorage.sol`. You can check it out in folder `contracts`.
 
-    ```shell
-    compile
-    migrate
-    ```
+This smart contract has:
 
-**NOTE**: This truffle box is not a complete dapp.
+* A variable `storedData` to store a number
+* A function `get()` to return the number stored at variable `storedData`
+* A function `set()` to change the number stored at variable `storedData`
 
-## RSK
+
+5. Compile and migrate the smart contract. Note inside the development console we don't preface commands with truffle.
+
+```javascript
+compile
+migrate
+```
+
+6. Running contract tests. 
+
+Our box also comes with the file `TestSimpleStorage.js` for testing the smart contract. You can check it out in `test` folder.
+
+```javascript
+test
+```
+
+**NOTE**: This box is the starting point for the RSK tutorial [Using rsk-starter-box](https://developers.rsk.co/tutorials/truffle-boxes/rsk-starter-box/).
+
+## Using RSK networks
+
+Truffle makes developing on RSK easier because we can configure custom networks for RSK. The networks are already configurated in `truffle-config.js` file. 
 
 ### Setup an account & get R-BTC
 
@@ -45,7 +83,7 @@ First ensure you are in a new and empty directory.
 
 ### Setup the gas price
 
-**Gas** is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send RBTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK, this is paid in **R-BTC**.
+**Gas** is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send R-BTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK, this is paid in **R-BTC**.
 The **minimumGasPrice** is written in the block header by miners and establishes the minimum gas price that a transaction should have in order to be included in that block.
 
 To get the **minimumGasPrice** do the following steps:
@@ -91,7 +129,7 @@ For more information about the **Gas** and **minimumGasPrice** please go [here](
 
 2. Check the gas price of the network, and update `truffle-config.js` if necessary.
 
-3. Run the development console for any RSK network.
+3. Run the truffle console for any RSK network.
 
     ```shell
     # Console for Mainnet
@@ -103,8 +141,28 @@ For more information about the **Gas** and **minimumGasPrice** please go [here](
 
 4. Compile and migrate the smart contracts. Note that inside the development console, we don't preface commands with truffle.
 
-    ```shell
+    ```javascript
     compile
     migrate
     ```
-    
+
+5. Another way to do it is out of truffle console, directly in terminal.
+
+    ```shell
+    truffle compile
+    truffle migrate
+    ```
+
+## Next steps
+
+- **Go to tutorial**
+
+Go to the tutorial [Using rsk-starter-box](https://developers.rsk.co/tutorials/truffle-boxes/rsk-starter-box/) to learn how to interact with `SimpleStorage.sol`. Also we cover all steps with more details, explanations and images.
+
+- **Find more documentation**
+
+Check out the [RSK developers portal](https://developers.rsk.co/).
+
+- **Do you have questions?**
+- 
+Ask in [RSK chat](https://gitter.im/rsksmart/getting-started).
