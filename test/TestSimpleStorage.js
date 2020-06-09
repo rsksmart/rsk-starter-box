@@ -1,4 +1,5 @@
 const SimpleStorage = artifacts.require('SimpleStorage');
+
 contract('SimpleStorage', (accounts) => {
     it('should store a value', async () => {
         const simpleStorageInstance = await SimpleStorage.deployed();
