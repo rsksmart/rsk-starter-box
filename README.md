@@ -65,7 +65,7 @@ migrate
 
 6. Running contract tests. 
 
-Our box also comes with the file `TestSimpleStorage.js` for testing the smart contract. You can check it out in `test` folder.
+Our box also comes with the file `TestSimpleStorage.js` for testing the smart contract. You can check it out in the `test` folder.
 
 ```javascript
 test
@@ -75,7 +75,7 @@ test
 
 ## Using RSK networks
 
-Truffle makes developing on RSK easier because we can configure custom networks for RSK. The networks are already configurated in `truffle-config.js` file. 
+Truffle makes developing on RSK easier because we can configure custom networks for RSK. The networks are already configured in the `truffle-config.js` file. 
 
 ### Setup an account & get R-BTC
 
@@ -148,7 +148,7 @@ For more information about the **Gas** and **minimumGasPrice** please go [here](
     migrate
     ```
 
-5. Another way to do it is out of truffle console, directly in terminal.
+5. Another option is to run the below commands directly in the terminal, out of the truffle console.
 
     ```shell
     truffle compile
@@ -159,7 +159,7 @@ For more information about the **Gas** and **minimumGasPrice** please go [here](
 
 - **Go to tutorial**
 
-Go to the tutorial [Using rsk-starter-box](https://developers.rsk.co/tutorials/truffle-boxes/rsk-starter-box/) to learn how to interact with `SimpleStorage.sol`. Also we cover all steps with more details, explanations and images.
+Go to the tutorial [Using rsk-starter-box](https://developers.rsk.co/tutorials/truffle-boxes/rsk-starter-box/) to learn how to interact with `SimpleStorage.sol`. Also, we covered all the steps with more details, explanations, and images.
 
 - **Find more documentation**
 
