@@ -1,7 +1,9 @@
 # RSK Truffle Starter Box
 
-This box comes with everything you need to start using Truffle on [RSK](https://www.rsk.co/) Blockchain. 
+This box comes with everything you need to start using Truffle on [RSK Blockchain](https://developers.rsk.co/rsk/). 
 It includes network configurations for Mainnet, Testnet and the SimpleStorage contract as an example to deploy.
+
+[RSK](https://www.rsk.co/) is an open source platform for Ethereum compatible smart contracts based on the Bitcoin network.
 
 ## Requirements
 
