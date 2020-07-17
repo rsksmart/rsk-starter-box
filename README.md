@@ -92,7 +92,10 @@ This smart contract has:
 * A function `set()` to change the number stored at variable `storedData`
 
 
-5. Compile and migrate the smart contract to Ganache. Note inside the development console we don't preface commands with truffle.
+5. Compile and migrate the smart contract. Note inside the development console we don't preface commands with truffle.
+
+> To make sure you're in the development console, the command prompt must be `truffle(develop)>`
+
 
 ```shell
 truffle(develop)> compile
