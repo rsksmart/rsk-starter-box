@@ -1,0 +1,11 @@
+README.md
+SillyDir
+box-img-lg.png
+box-img-sm.png
+contracts
+migrations
+package-lock.json
+package.json
+test
+truffle-box.json
+truffle-config.js
