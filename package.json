@@ -1,9 +1,14 @@
 {
     "name": "rsk-starter-box",
     "version": "1.0.0",
+    "description": "Starter box to develop using Truffle on RSK blockchain",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/rsksmart/rsk-starter-box.git"
+    },
     "dependencies": {
         "@truffle/hdwallet-provider": "1.0.34"
     },
     "devDependencies": {},
-    "license": "MTI"
+    "license": "MIT"
 }
