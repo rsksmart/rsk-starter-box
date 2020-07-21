@@ -41,7 +41,7 @@ truffle unbox rsksmart/rsk-starter-box
 
 Truffle has an interactive console that also spawns a development blockchain. This is very useful for compiling, deploying and testing locally.
 
-3. Run the development console. This command is successful if you enter a REPL and see a 10 accounts, a mnemonic and the command prompt is now `truffle(develop)>`
+3. Run the development console. This command is successful if you see a list of 10 accounts, a mnemonic and the command prompt is now `truffle(develop)>`
 
 
 ```shell
