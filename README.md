@@ -31,11 +31,15 @@ mkdir rsk-starter
 cd rsk-starter
 ```
 
-2. Run the unbox command. This will install all necessary dependencies.
+2. Run the unbox command. It can take some time, as this will install all necessary dependencies.
 
 ```shell
 truffle unbox rsksmart/rsk-starter-box
 ```
+
+This is the result using Windows OS:
+
+![truffle unbox](/images/rsk-starter-box-01.png)
 
 ## Development console
 
@@ -43,14 +47,13 @@ Truffle has an interactive console that also spawns a development blockchain. Th
 
 3. Run the development console. This command is successful if you see a list of 10 accounts, a mnemonic and the command prompt is now `truffle(develop)>`
 
-
 ```shell
 truffle develop
 ```
 
 You will now be in the truffle develop REPL with seeded accounts and their associated private keys listed.
 
-```shell
+```txt
 Truffle Develop started at http://127.0.0.1:9545/
 
 Accounts:
@@ -91,45 +94,38 @@ This smart contract has:
 * A function `get()` to return the number stored at variable `storedData`
 * A function `set()` to change the number stored at variable `storedData`
 
-
 5. Compile and migrate the smart contract. Note inside the development console we don't preface commands with truffle.
 
 > To make sure you're in the development console, the command prompt must be `truffle(develop)>`
 
+```shell
+compile
+```
+The `compile output` should be similar to:
+
+![truffle compile](/images/rsk-starter-box-02.png)
 
 ```shell
-truffle(develop)> compile
+migrate
 ```
 
-```shell
-truffle(develop)> migrate
-```
+And the `migrate output` should be similar to:
+
+![truffle migrate](/images/rsk-starter-box-03.png)
 
 6. Running contract tests.
 
 Our box also comes with the file `TestSimpleStorage.js` for testing the smart contract. You can check it out in the `test` folder.
 
-```shell
-truffle(develop)> test
-```
-
-This test output should be similar to:
+Run this command in the development console:
 
 ```shell
-Using network 'develop'.
-
-
-Compiling your contracts...
-===========================
-> Everything is up to date, there is nothing to compile.
-
-  Contract: SimpleStorage
-    ✓ should store a value (83ms)
-
-
-  1 passing (123ms)
-
+test
 ```
+
+This `test output` should be similar to:
+
+![truffle test](/images/rsk-starter-box-04.png)
 
 **NOTE**: This box is the starting point for the RSK tutorial [Using rsk-starter-box](https://developers.rsk.co/tutorials/truffle-boxes/rsk-starter-box/).
 
@@ -201,7 +197,7 @@ For more information about the **Gas** and **minimumGasPrice** please go [here](
     truffle console --network testnet
     ```
 
-4. Compile and migrate the smart contracts. Note that inside the development console, we don't preface commands with truffle.
+4. Compile and migrate the smart contracts. Note that inside the truffle console, we don't preface commands with truffle.
 
     ```javascript
     compile

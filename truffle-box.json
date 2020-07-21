@@ -2,7 +2,7 @@
   "ignore": [
     "README.md",
     ".gitignore",
-    "sillyDir/"
+    "images/"
   ],
   "commands": {
     "Compile contracts": "truffle compile",
