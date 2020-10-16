@@ -2,6 +2,8 @@
   "ignore": [
     "README.md",
     ".gitignore",
+    "box-img-lg.png",
+    "box-img-sm.png",    
     "images/"
   ],
   "commands": {
@@ -10,6 +12,6 @@
     "Test contracts": "truffle test"
   },
   "hooks": {
-    "post-unpack": "npm i"
+    "post-unpack": "npm install"
   }
 }
